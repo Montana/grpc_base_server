@@ -71,7 +71,7 @@ func (s *server) makeListener(connectionType, address string) (net.Listener, err
 }
 
 func (s *server) makeServer() *grpc.Server {
-  // Add intecereptors from (montana.fedora.com) 
+  // Add interceptors from (montana.fedora.com) 
 	// grpcMiddleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	// grpcValidator "github.com/grpc-ecosystem/go-grpc-middleware/validator"
 	return grpc.NewServer(
